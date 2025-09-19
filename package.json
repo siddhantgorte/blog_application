@@ -1,0 +1,30 @@
+{
+  "name": "blog-application",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000b\u0000l\u0000o\u0000g\u0000_\u0000a\u0000p\u0000p\u0000l\u0000i\u0000c\u0000a\u0000t\u0000i\u0000o\u0000n\u0000\r\u0000 \u0000",
+  "homepage": "https://github.com/siddhantgorte/blog_application#readme",
+  "bugs": {
+    "url": "https://github.com/siddhantgorte/blog_application/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddhantgorte/blog_application.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
