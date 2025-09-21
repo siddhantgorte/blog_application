@@ -6,7 +6,7 @@ function createTokenForUser(user){
     const payLoad = {
         _id: user._id,
         email: user.email,
-        profileImageUrl: user.profileImageUrl,
+        profileImageUrl: user.profileImageURL,
         role: user.role,
     }
     const token  = JWT.sign(payLoad, secret)
