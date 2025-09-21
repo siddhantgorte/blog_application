@@ -2,8 +2,9 @@ const path = require('path')
 const express = require('express')
 const mongoose = require('mongoose')
 const cookieParser = require('cookie-parser')
-
-const blog = require('./models/blog') 
+const blog = require('./models/blog')
+const dotenv = require('dotenv')
+dotenv.config({ path: '.env' }) 
 
 const userRoute = require('./routes/user')
 const blogRoute = require('./routes/blog')
@@ -12,9 +13,10 @@ const { checkForAuthenticationCookie } = require( './middlewares/authentication'
 const Blog = require( './models/blog' )
 
 const app = express()
-const PORT = 8000
+const PORT = process.env.PORT
 
-mongoose.connect('mongodb://localhost:27017/blogify')
+mongoose.connect(process.env.MONGO_URL)
+
 .then(e => console.log('MongoDB connected'))
 
 app.set('view engine', 'ejs')
